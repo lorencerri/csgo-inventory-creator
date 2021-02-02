@@ -1,8 +1,17 @@
+import { useState } from 'react';
 import { Jumbotron, Container, Table, Navbar, Nav } from 'react-bootstrap';
 
 import weapons from '../Data/weapons.json';
 
 export const Content = () => {
+	const calculateTotal = () =>
+		Object.keys(localStorage)
+			.filter(k => k.includes('Price'))
+			.map(k => localStorage[k])
+			.reduce((prev, cur) => prev + parseInt(cur), 0);
+
+	const [total, setTotal] = useState(calculateTotal);
+
 	const Input = (weapon, type) => (
 		<input
 			className='form-control form-control-sm'
@@ -12,6 +21,7 @@ export const Content = () => {
 			defaultValue={localStorage.getItem(`${weapon}-${type}`)}
 			onChange={({ target }) => {
 				localStorage.setItem(`${weapon}-${type}`, target.value);
+				setTotal(calculateTotal);
 			}}
 		/>
 	);
@@ -30,7 +40,8 @@ export const Content = () => {
 					<Nav className='mr-auto' />
 					<Navbar.Collapse className='justify-content-end'>
 						<Navbar.Text>
-							Total: <span style={{ color: 'white' }}>$XX</span>
+							Total:{' '}
+							<span style={{ color: 'white' }}>${total}</span>
 						</Navbar.Text>
 					</Navbar.Collapse>
 				</Navbar>
