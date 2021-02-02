@@ -1,25 +1,24 @@
 import './App.css';
 
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 // import SteamMarketFetcher from 'steam-market-fetcher';
 
 import { Header } from './Components/Header';
 import { Content } from './Components/Content';
 
 const App = () => {
-	const [state, setState] = useState({});
+	// const [state, setState] = useState({});
 
 	useEffect(() => {
 		const fetchMarketInfo = () => {
 			// TODO: Fetch CS:GO Items
 			// Limitations: You can't fetch enough items before Steam ratelimits you.
-			setState({});
 		};
 
 		fetchMarketInfo();
 	});
 
-	console.log(state);
+	// console.log(state);
 	return (
 		<>
 			<Header />
