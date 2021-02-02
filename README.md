@@ -1,6 +1,8 @@
 # csgo-inventory-creator
 
-**Project Abandoned** due to rate-limit issues with the Steam market.
+> **Project Abandoned** due to rate-limit issues with the Steam market.
+
+[Netlify Demo](https://quizzical-knuth-d82898.netlify.app)
 
 Below are a couple screenshots in its unfinished state.
 
