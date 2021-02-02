@@ -14,7 +14,7 @@ export const Content = () => {
 
 	return (
 		<Jumbotron fluid style={{ margin: 0, backgroundColor: '#313131' }}>
-			<Container>
+			<Container className='shadow-5' style={{ padding: 0 }}>
 				<Navbar
 					variant='dark'
 					style={{

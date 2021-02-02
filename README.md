@@ -6,4 +6,4 @@ Below are a couple screenshots in its unfinished state.
 
 **Light Variant:** ![](https://i.plexidev.org/yXJ6lKc)
 
-**Dark Variant:** ![](https://i.plexidev.org/H3dYW9l)
+**Dark Variant:** ![](https://i.plexidev.org/Xy9wPhs)
