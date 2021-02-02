@@ -8,7 +8,7 @@ export const Content = () => {
 		Object.keys(localStorage)
 			.filter(k => k.includes('Price'))
 			.map(k => localStorage[k] || 0)
-			.reduce((prev, cur) => prev + parseInt(cur), 0);
+			.reduce((prev, cur) => prev + Number(cur), 0);
 
 	const [total, setTotal] = useState(calculateTotal);
 
