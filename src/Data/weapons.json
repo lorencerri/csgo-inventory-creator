@@ -1,0 +1,54 @@
+{
+	"Pistol": {
+		"Glock-18": { "default": true },
+		"USP-S": { "default": true },
+		"P2000": { "default": false },
+		"Dual Berettas": { "default": true },
+		"P250": { "default": true },
+		"Tec-9": { "default": true },
+		"Five-SeveN": { "default": true },
+		"CZ75-Auto": { "default": false },
+		"Desert Eagle": { "default": true },
+		"R8 Revolver": { "default": false }
+	},
+	"SMG": {
+		"MAC-10": { "default": true },
+		"MP9": { "default": true },
+		"MP7": { "default": true },
+		"MP5-SD": { "default": false },
+		"UMP-45": { "default": true },
+		"P90": { "default": true },
+		"PP-Bizon": { "default": true }
+	},
+	"Rifle": {
+		"Galil AR": { "default": true },
+		"FAMAS": { "default": true },
+		"AK-47": { "default": true },
+		"M4A4": { "default": true },
+		"M4A1-S": { "default": false },
+		"SSG 08": { "default": true },
+		"SG 553": { "default": true },
+		"AUG": { "default": true },
+		"AWP": { "default": true },
+		"G3SG1": { "default": true },
+		"SCAR-20": { "default": true }
+	},
+	"Heavy": {
+		"Nova": { "default": true },
+		"XM1014": { "default": true },
+		"Sawed-Off": { "default": true },
+		"MAG-7": { "default": true },
+		"M249": { "default": true },
+		"Negev": { "default": true }
+	},
+	"Melee": {
+		"Knife": { "default": false }
+	},
+	"Gloves": {
+		"Gloves": { "default": false }
+	},
+	"Agents": {
+		"Local T Agent": { "default": false },
+		"Local CT Agent": { "default": false }
+	}
+}
