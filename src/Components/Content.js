@@ -41,7 +41,9 @@ export const Content = () => {
 					<Navbar.Collapse className='justify-content-end'>
 						<Navbar.Text>
 							Total:{' '}
-							<span style={{ color: 'white' }}>${total}</span>
+							<span style={{ color: 'white' }}>
+								${total.toFixed(2)}
+							</span>
 						</Navbar.Text>
 					</Navbar.Collapse>
 				</Navbar>
