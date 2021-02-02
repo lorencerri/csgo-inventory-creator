@@ -1,11 +1,4 @@
-import {
-	Jumbotron,
-	Container,
-	Table,
-	Navbar,
-	Nav,
-	Form,
-} from 'react-bootstrap';
+import { Jumbotron, Container, Table, Navbar, Nav } from 'react-bootstrap';
 
 import weapons from '../Data/weapons.json';
 
@@ -58,16 +51,22 @@ export const Content = () => {
 								</tr>
 								{Object.keys(weapons[category]).map(weapon => (
 									<tr>
-										<td>{weapon}</td>
-										<td>
-											<Form.Control
+										<td width='30%'>{weapon}</td>
+										<td width='50%'>
+											<input
+												className='form-control form-control-sm'
 												size='sm'
 												type='text'
 												placeholder='Skin'
 											/>
 										</td>
-										<td>
-											<b>$XX</b>
+										<td width='20%'>
+											<input
+												className='form-control form-control-sm'
+												size='sm'
+												type='number'
+												placeholder='Price'
+											/>
 										</td>
 									</tr>
 								))}
