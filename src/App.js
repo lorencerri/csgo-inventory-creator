@@ -1,5 +1,3 @@
-import './App.css';
-
 import { useEffect } from 'react';
 // import SteamMarketFetcher from 'steam-market-fetcher';
 
